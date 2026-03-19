@@ -1,0 +1,57 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+.popTable {
+  border-collapse: collapse;
+  min-width: 880px;
+}
+
+.popTable th,
+.popTable td {
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  padding: 8px 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.popTable thead th {
+  position: sticky;
+  top: 0;
+  background: #f9fafb;
+  z-index: 1;
+}
+
+.corner {
+  min-width: 120px;
+  background: #f9fafb;
+}
+
+.prefHead {
+  font-weight: 700;
+}
+
+.year {
+  font-weight: 700;
+  background: #ffffff;
+}
+
+.cell {
+  background: #ffffff;
+}
+

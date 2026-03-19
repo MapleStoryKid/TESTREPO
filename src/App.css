@@ -1,0 +1,154 @@
+.app {
+  padding: 20px;
+}
+
+.appHeader {
+  margin-bottom: 16px;
+}
+
+.appHeader h1 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.sub {
+  margin: 0;
+  color: #4b5563;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.wide {
+  grid-column: 1 / -1;
+}
+
+.muted {
+  margin: 0 0 10px 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 13px;
+  color: #374151;
+}
+
+.field input {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #111827;
+}
+
+.fileBtn {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px dashed #9ca3af;
+  cursor: pointer;
+  user-select: none;
+  color: #111827;
+  background: #f9fafb;
+}
+
+.fileBtn input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.legend h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.groupList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.groupChip {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wide {
+    grid-column: 1 / -1;
+  }
+  .grid2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .groupList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
